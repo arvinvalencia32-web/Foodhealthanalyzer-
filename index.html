@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Food Health Analyzer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>🥗 Food Health Analyzer</h1>
+  <p class="sub">Upload or take a photo of your food to see its health benefits.</p>
+
+  <div class="card drop">
+    <img id="preview" alt="Food preview">
+    <div class="btns">
+      <label class="btn">📷 Take a photo<input id="cam" type="file" accept="image/*" capture="environment"></label>
+      <label class="btn alt">🖼️ Upload<input id="pick" type="file" accept="image/*"></label>
+    </div>
+    <button id="go" disabled>Analyze</button>
+  </div>
+
+  <div id="out"></div>
+  <p class="note">This is only an estimate based on the photo and is not medical advice.</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
